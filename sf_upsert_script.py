@@ -5,7 +5,7 @@ import csv
 from salesforce_bulk import SalesforceBulk
 from salesforce_bulk import CsvDictsAdapter
 
-bulk = SalesforceBulk(username=username, password=password)
+bulk = SalesforceBulk(username="thendricks@pfdrive.com", password="N0rC@1Life!")
 
 job = bulk.create_insert_job("user__c", contentType='CSV', concurrency='Parallel')
 
