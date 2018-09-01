@@ -1,4 +1,3 @@
-import simple_salesforce as sf
 import numpy as np
 wo = ''
 source = ''
