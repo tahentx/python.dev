@@ -7,8 +7,7 @@ ppa = 0.15
 # plant_ac_capacity = 744
 energy_billable = 4000
 def daily_loss(ppa,energy_billable):
-	loss_calculation = ppa * energy_billable
-	return loss_calculation
+	loss_calculation = int(ppa * energy_billable)
 	print(loss_calculation)
 daily_loss(ppa,energy_billable)
 
