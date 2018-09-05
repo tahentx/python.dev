@@ -9,12 +9,12 @@
 # 	loss_calculation = int(ppa * energy_billable)
 # 	return loss_calculation
 # print(daily_loss(ppa,energy_billable)) 
+ppaRialto = int(input("What is the PPA rate (please enter whole units?"))
 
 def energy_loss(ppa):
 	loss = ppa * ppa
 	return loss
 
-ppaRialto = .15
 lost_energy = energy_loss(ppaRialto)
 print("The lost energy for Rialto is " + str(lost_energy))
 
