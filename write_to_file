@@ -1,0 +1,3 @@
+test = 55 + 45
+with open('workorder.txt', 'rt') as f:
+	print(test, f)
