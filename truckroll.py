@@ -1,7 +1,7 @@
 # Capture PPA rate from user
 import random
 
-print random()
+print(random())
 # budget = int(input("What does it cost to roll a truck?"))
 # ppaRialto = int(input("What is the PPA rate (please enter whole units?"))/100
 # print(ppaRialto)
