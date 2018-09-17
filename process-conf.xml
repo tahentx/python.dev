@@ -1,0 +1,42 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="accountInsert"
+        class="com.salesforce.dataloader.process.ProcessRunner"
+        singleton="false">
+        <description>accountInsert job gets the account record from the CSV file 
+            and inserts it into Salesforce.</description>
+        <property name="name" value="accountInsert"/>
+        <property name="configOverrideMap">
+            <map>
+                <entry key="sfdc.debugMessages" value="true"/>
+                <entry key="sfdc.debugMessagesFile" 
+                    value="C:\DLTest\Log\accountInsertSoapTrace.log"/>
+                <entry key="sfdc.endpoint" value="https://na77.salesforce.com"/>
+                <entry key="sfdc.username" value="thendricks@pfdrive.com"/>
+                <!--Password below has been encrypted using key file, 
+                    therefore, it will not work without the key setting: 
+                    process.encryptionKeyFile.
+                    The password is not a valid encrypted value, 
+                    please generate the real value using the encrypt.bat utility -->
+                <entry key="sfdc.password" value="347bff50a6e6106243fb98640a2c900b64c758db58c51d398c4d220fae14132b"/>
+                <entry key="process.encryptionKeyFile" 
+                    value="c:\Users\{user}\.dataloader\dataLoader.key"/>
+                <entry key="sfdc.timeoutSecs" value="600"/>
+                <entry key="sfdc.loadBatchSize" value="200"/>
+                <entry key="sfdc.entity" value="Account"/>
+                <entry key="process.operation" value="insert"/>
+                <entry key="process.mappingFile" 
+                    value="C:\DLTest\Command Line\Config\accountInsertMap.sdl"/>
+                <entry key="\pfdrive\alpha_wo_test.csv" 
+                    value="C:\DLTest\In\insertAccounts.csv"/>
+                <entry key="process.outputSuccess" 
+                    value="c:\DLTest\Log\accountInsert_success.csv"/>
+                <entry key="process.outputError" 
+                    value="c:\DLTest\Log\accountInsert_error.csv"/>
+                <entry key="dataAccess.type" value="csvRead"/>
+                <entry key="process.initialLastRunDate" 
+                    value="2005-12-01T00:00:00.000-0800"/>
+            </map>
+        </property>
+    </bean>
+</beans>

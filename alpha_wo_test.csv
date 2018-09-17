@@ -1,0 +1,3 @@
+﻿Work Order,Description,Account,Asset ID ,Asset Description,Plant,WO Type
+WO-00999,Test WO,9998.01.Plant - Solar Fund 1 - Alpha Solar Plant,9998.01.Plant,Alpha Solar Plant--Demo Utility Asset,Alpha Solar Plant--Demo Utility Asset,Corrective
+WO-00998,Test WO,9998.01.Plant - Solar Fund 1 - Alpha Solar Plant,9998.01.Plant,Alpha Solar Plant--Demo Utility Asset,Alpha Solar Plant--Demo Utility Asset,Corrective
