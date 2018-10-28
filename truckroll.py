@@ -1,6 +1,6 @@
 ppa_price = 10
-production_capacity = 250
-def opportunity_cost (ppa_price, production_capacity):
-	opp_cost = ppa_price * production_capacity
-	return opp_cost
-print(str(opportunity_cost))
+regional_truck_roll_hourly_cost = 150
+if ppa_price > regional_truck_roll_hourly_cost:
+	print("Roll a truck.")
+else:
+	print("The economics don't make sense.")  
