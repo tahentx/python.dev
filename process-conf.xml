@@ -27,7 +27,7 @@
                 <entry key="process.operation" value="insert"/>
                 <entry key="process.mappingFile" 
                     value="C:\DLTest\Command Line\Config\accountInsertMap.sdl"/>
-                <entry key="\pfdrive\alpha_wo_test.csv" 
+                <entry key="C:\Users\thendricks\pfdrivedev\alpha_wo_test.csv" 
                     value="C:\DLTest\In\insertAccounts.csv"/>
                 <entry key="process.outputSuccess" 
                     value="c:\DLTest\Log\accountInsert_success.csv"/>
