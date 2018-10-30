@@ -1,2 +1,1 @@
-import urllib2
-import xmltodict
+import xml.etree.ElementTree as ET
