@@ -7,5 +7,25 @@
 # else:
 # 	print("The economics don't make sense.")  
 
-for x in range(0,7):
-	print("What it do.") 
+# for x in range(0,7):
+# 	print("What it do.") 
+
+# ballers = ["Greek Freak", "Tatum", "Westbrook", "Brow"]
+# for x in ballers:
+# 	print(x)
+
+# inverters = ["SMA", "Solar Edge", "Chint", "Solectria"]
+# for x in inverters:
+# 	print(x)
+
+# subs = ["Bay4", "Max Gen", "Borrego", "Sun Systems"]
+# for x in subs:
+# 	print(x)
+
+# authors = ["Styron", "Murakami", "Teju Cole", "Phillip Roth"]
+# for x in authors:
+# 	print(x)
+
+dataloggers = ["AQS", "LGate", "Draker", "Campbells"]
+for x in dataloggers:
+	print(x)
