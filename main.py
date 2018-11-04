@@ -1,6 +1,7 @@
 import requests
 import json
-
+import dpath.util
+# dpath might be the library to use to pull data from complex dictionary
 # url and api key to test solaredge api
 def main():
 	url = "https://monitoringapi.solaredge.com/sites/list?"
