@@ -31,8 +31,9 @@
 # 	print(x)
 
 # practice with modulus
-for x in range(0,10):
-	if x % 3 == 0:
-		print("odd")
+names = ["Tom","Terry","Tim","Chris"]
+for x in names:
+	if x[0] == "T":
+		print(x)
 	else:
-		print("even")
+		print("Does not start with T")
