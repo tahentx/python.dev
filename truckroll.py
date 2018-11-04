@@ -26,6 +26,13 @@
 # for x in authors:
 # 	print(x)
 
-dataloggers = ["AQS", "LGate", "Draker", "Campbells"]
-for x in dataloggers:
-	print(x)
+# dataloggers = ["AQS", "LGate", "Draker", "Campbells"]
+# for x in dataloggers:
+# 	print(x)
+
+# practice with modulus
+for x in range(0,10):
+	if x % 3 == 0:
+		print("odd")
+	else:
+		print("even")
