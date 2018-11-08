@@ -9,10 +9,9 @@ def main():
 # first use of requests library
 	response = requests.get(url,params=api_key)
 	print(response.text)
-	# data = json.loads(response.text)
-	# project = data['sites']['site']
-	# for data in project:
-	# 	print(project['modelName'])
+	
+	
+	
 
 if __name__ == "__main__":
 		main()
