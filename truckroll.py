@@ -31,9 +31,17 @@
 # 	print(x)
 
 # practice with modulus
-names = ["Tom","Terry","Tim","Chris"]
-for x in names:
-	if x[0] == "T":
-		print(x)
+# names = ["Tom","Terry","Tim","Chris"]
+# for x in names:
+# 	if x[0] == "T":
+# 		print(x)
+# 	else:
+# 		print("Does not start with T")	
+
+
+practice = ["AI", "Jordan", "Penny"]
+for x in practice:
+	if x[1] == "o":
+		print("Jumpman!")
 	else:
-		print("Does not start with T")	
+		print("Not Jumpman.")
