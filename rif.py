@@ -5,3 +5,7 @@ if confirm == 'Y':
 	print("Ok. We will terminate " + rif + ".")
 else:
 	print("Ok. He can stay.")
+for x in rif:
+	if rif in employees:
+		print(rif + " has been terminated.")
+		del rif
