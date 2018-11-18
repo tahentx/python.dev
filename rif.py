@@ -7,6 +7,8 @@ rif = input("Your headcount is " + str(headcount) + ". Who is to be terminated? 
 # else:
 # 	print("Ok. He can stay.")
 for x in employees:
-	if x in employees == rif:
+	if x == "Matt":
 		print("test")
+
+
 		
