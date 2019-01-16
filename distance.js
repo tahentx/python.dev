@@ -1,4 +1,3 @@
-import unirest
 
 var unirest = require('unirest');
 
