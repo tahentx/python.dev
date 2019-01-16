@@ -18,9 +18,10 @@
 # for x in inverters:
 # 	print(x)
 
-# subs = ["Bay4", "Max Gen", "Borrego", "Sun Systems"]
-# for x in subs:
-# 	print(x)
+subs = ["Bay4", "Max Gen", "Borrego", "Sun Systems"]
+for x in subs:
+	if x[0:9] == "4":
+		print("there is an integer in your dictionary")
 
 # authors = ["Styron", "Murakami", "Teju Cole", "Phillip Roth"]
 # for x in authors:
@@ -39,9 +40,9 @@
 # 		print("Does not start with T")	
 
 
-practice = ["AI", "Jordan", "Penny"]
-for x in practice:
-	if x[1] == "o":
-		print("Jumpman!")
-	else:
-		print("Not Jumpman.")
+# practice = ["AI", "Jordan", "Penny"]
+# for x in practice:
+# 	if x[1] == "o":
+# 		print("Jumpman!")
+# 	else:
+# 		print("Not Jumpman.")
