@@ -20,7 +20,7 @@
 
 subs = ["Bay4", "Max Gen", "Borrego", "Sun Systems"]
 for x in subs:
-	if x[0:9] == "4":
+	if x == "Bay4":
 		print("there is an integer in your dictionary")
 
 # authors = ["Styron", "Murakami", "Teju Cole", "Phillip Roth"]
