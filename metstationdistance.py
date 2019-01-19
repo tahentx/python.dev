@@ -2,11 +2,14 @@ import geopy.distance
 import csv
 
 with open('sd_metstations.csv', 'r') as csv_file:
-	csv_reader = csv.reader(csv_file)
-
-	for line in csv_reader:
+	metstations = csv.reader(csv_file)
+	metstationlist = list(metstations)
+	for line in metstationlist:
 		print(line[1:])
 		# TODO: create a list from the row
+		
+
+
 		# TODO: find the distance between one row and each of the rest of the rows
 		# TODO: identify the one that is closest to that row
 		# TODO: Insert that value into a new array
