@@ -4,8 +4,13 @@ import csv
 with open('sd_metstations.csv', 'r') as csv_file:
 	metstations = csv.reader(csv_file)
 	metstationlist = list(metstations)
-	for line in metstationlist:
-		print(line[1:])
+	backup = []
+	for line in range(1,len(metstationlist)):
+		coords_1 = (metstationlist[1][1],metstationlist[1][2])
+		print(coords_1)	
+	# for line in metstationlist:
+	# 	print(line[0])
+		# print(line[1:])
 		# TODO: create a list from the row
 		
 
@@ -16,7 +21,7 @@ with open('sd_metstations.csv', 'r') as csv_file:
 		# TODO: Repeat the distance analysis for the next row
 		# TODO: Write the shortest distance values to new file with name of site and distance value
 
-coords_1 = (52.2296756, 21.0122287)
-coords_2 = (52.406374, 16.9251681)
+# coords_1 = (52.2296756, 21.0122287)
+# coords_2 = (52.406374, 16.9251681)
 
-print(geopy.distance.distance(coords_1, coords_2).miles)
+# print(geopy.distance.distance(coords_1, coords_2).miles)
