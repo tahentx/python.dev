@@ -7,7 +7,7 @@ with open('sd_metstations.csv', 'r') as csv_file:
 	backup = []
 	for line in range(1,len(metstationlist)):
 		coords_1 = (metstationlist[1][1],metstationlist[1][2])
-		print(coords_1)	
+		print(type(coords_1))	
 	# for line in metstationlist:
 	# 	print(line[0])
 		# print(line[1:])
