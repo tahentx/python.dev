@@ -5,9 +5,20 @@ with open('sd_metstations.csv', 'r') as csv_file:
 	metstations = csv.reader(csv_file)
 	metstationlist = list(metstations)
 	backup = []
-	for line in range(1,len(metstationlist)):
-		coords_1 = (metstationlist[1][1],metstationlist[1][2])
-		print(type(coords_1))	
+
+	def test_function(site,hardware = "AlsoEnergy"):
+		print("The hardware interface at " + site + " is " + hardware)
+
+	test_function("Iron Mountain","Campbells CR1000")
+	test_function("San Diego Mission Trails","Solar Edge")
+	test_function("Iron Mountain")	
+	# for line in range(1,len(metstationlist)):
+	# 	coords_1 = (metstationlist[1][1],metstationlist[1][2])
+	# 	coords_2 = (metstationlist[2][1],metstationlist[2][2])	
+	# 	print(geopy.distance.distance(coords_1, coords_2).miles)
+
+
+		
 	# for line in metstationlist:
 	# 	print(line[0])
 		# print(line[1:])
@@ -23,5 +34,4 @@ with open('sd_metstations.csv', 'r') as csv_file:
 
 # coords_1 = (52.2296756, 21.0122287)
 # coords_2 = (52.406374, 16.9251681)
-
 # print(geopy.distance.distance(coords_1, coords_2).miles)
