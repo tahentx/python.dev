@@ -1,17 +1,15 @@
 import geopy.distance
 import csv
+import itertools
 
 with open('sd_metstations.csv', 'r') as csv_file:
 	metstations = csv.reader(csv_file)
 	metstationlist = list(metstations)
 	backup = []
 
-	def test_function(site,hardware = "AlsoEnergy"):
-		print("The hardware interface at " + site + " is " + hardware)
+	for row in metstationlist:
+		print(str(metstationlist.line_num))
 
-	test_function("Iron Mountain","Campbells CR1000")
-	test_function("San Diego Mission Trails","Solar Edge")
-	test_function("Iron Mountain")	
 	# for line in range(1,len(metstationlist)):
 	# 	coords_1 = (metstationlist[1][1],metstationlist[1][2])
 	# 	coords_2 = (metstationlist[2][1],metstationlist[2][2])	
