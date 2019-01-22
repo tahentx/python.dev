@@ -1,6 +1,6 @@
 import geopy.distance
 import csv
-import itertools
+import numpy as np
 
 with open('sd_metstations.csv', 'r') as csv_file:
 	metstations = csv.reader(csv_file)
@@ -12,7 +12,13 @@ with open('sd_metstations.csv', 'r') as csv_file:
 	# 	coords_2 = (metstationlist[2][1],metstationlist[2][2])	
 	# 	print(geopy.distance.distance(coords_1, coords_2).miles)
 
+coords_1 = np.array(metstationlist)
+print(coords_1.shape)
 
+
+# for line in range(1, len(metstationlist)):
+# 	for x in enumerate(metstationlist):
+# 		coords_1 = (metstationlist[1])
 		
 	# for line in metstationlist:
 	# 	print(line[0])
