@@ -1,6 +1,5 @@
 import geopy.distance
 import csv
-import numpy as np
 
 with open('sd_metstations.csv', 'r') as csv_file:
 	metstations = csv.reader(csv_file)
