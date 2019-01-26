@@ -6,3 +6,8 @@ with open('sd_metstations.csv', 'r') as csv_file:
 		coords_2 = (met[2][1],met[2][2])	
 		print(geopy.distance.distance(coords_1, coords_2).miles)
 		next(met)
+
+
+
+x[:2]
+(1, 'one')
