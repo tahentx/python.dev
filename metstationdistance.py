@@ -6,10 +6,12 @@ with open('sd_metstations.csv', 'r') as csv_file:
 	metstationlist = list(metstations)
 
 
-	def calculate_distance(coords_1,coords_2):
-		coords_1 = metstationlist[ : ,1:2]
-		coords_2 = metstationlist[1,1:2]
-		return geopy.distance.distance(coords_1, coords_2).miles
+print(metstationlist)
+
+	# def calculate_distance(coords_1,coords_2):
+	# 	coords_1 = metstationlist[ : ,1:2]
+	# 	coords_2 = metstationlist[1,1:2]
+	# 	return geopy.distance.distance(coords_1, coords_2).miles
 
 
 
