@@ -52,12 +52,14 @@ backup = []
 
 coords_1 = [sdpd_central.lat,sdpd_central.long]
 coords_2 = [mission_trails.lat,mission_trails.long]
+coords_3 = [inspiration.lat,inspiration.long]
 
 
 # coords_1 = [mission_trails.lat,mission_trails.long]
 # coords_2 = [inspiration.lat,inspiration.long]
 backup.append(geopy.distance.distance(coords_1, coords_2).miles)
-print(backup)
+backup.append(geopy.distance.distance(coords_1, coords_3).miles)
+print(min(backup))
 
 
 # ironmountain = Site(met[1:],met[2])
