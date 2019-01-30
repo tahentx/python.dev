@@ -48,22 +48,26 @@ inspiration.name = metlist[5][0]
 inspiration.lat = metlist[5][1]
 inspiration.long = metlist[5][2]
 
-backup = []
+# this code works
+# backup = []
 
-coords_1 = [sdpd_central.lat,sdpd_central.long]
-coords_2 = [mission_trails.lat,mission_trails.long]
-coords_3 = [inspiration.lat,inspiration.long]
+# coords_1 = [sdpd_central.lat,sdpd_central.long]
+# coords_2 = [mission_trails.lat,mission_trails.long]
+# coords_3 = [inspiration.lat,inspiration.long]
+
+# backup.append(geopy.distance.distance(coords_1, coords_2).miles)
+# backup.append(geopy.distance.distance(coords_1, coords_3).miles)
+# print(min(backup))
+
+sites_with_mets = [[ironmountain.lat,ironmountain.long],[sdpd_west.lat,sdpd_west.long],[sd_missionvalley.lat,sd_missionvalley.long],[sdpd_central.lat,sdpd_central.long],[mission_trails.lat,mission_trails.long],[inspiration.lat,inspiration.long]]
+
+print(sites_with_mets[0])
+
+def calculate():
+	coords_1 = sites_with_mets[0][0]
+	print(coords_1)
+
+	# backup_candidate = enumerate(sites_with_mets)
+			
 
 
-# coords_1 = [mission_trails.lat,mission_trails.long]
-# coords_2 = [inspiration.lat,inspiration.long]
-backup.append(geopy.distance.distance(coords_1, coords_2).miles)
-backup.append(geopy.distance.distance(coords_1, coords_3).miles)
-print(min(backup))
-
-
-# ironmountain = Site(met[1:],met[2])
-# ironmountain.lat = met[1]
-# print(ironmountain.lat)
-
-		
