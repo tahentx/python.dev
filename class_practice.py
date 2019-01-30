@@ -61,11 +61,9 @@ inspiration.long = metlist[5][2]
 
 sites_with_mets = [[ironmountain.lat,ironmountain.long],[sdpd_west.lat,sdpd_west.long],[sd_missionvalley.lat,sd_missionvalley.long],[sdpd_central.lat,sdpd_central.long],[mission_trails.lat,mission_trails.long],[inspiration.lat,inspiration.long]]
 
-print(sites_with_mets[0])
-
 def calculate():
-	coords_1 = sites_with_mets[0][0]
-	print(coords_1)
+	backup = []
+	for sites in enumerate(sites_with_mets):
 
 	# backup_candidate = enumerate(sites_with_mets)
 			
