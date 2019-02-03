@@ -48,21 +48,6 @@ inspiration.name = metlist[5][0]
 inspiration.lat = metlist[5][1]
 inspiration.long = metlist[5][2]
 
-# this code works
-# backup = []
 
-# coords_1 = [sdpd_central.lat,sdpd_central.long]
-# coords_2 = [mission_trails.lat,mission_trails.long]
-# coords_3 = [inspiration.lat,inspiration.long]
-
-# backup.append(geopy.distance.distance(coords_1, coords_2).miles)
-# backup.append(geopy.distance.distance(coords_1, coords_3).miles)
-# print(min(backup))
-
-sites_with_mets = [[ironmountain.lat,ironmountain.long],[sdpd_west.lat,sdpd_west.long],[sd_missionvalley.lat,sd_missionvalley.long],[sdpd_central.lat,sdpd_central.long],[mission_trails.lat,mission_trails.long],[inspiration.lat,inspiration.long]]
-
-
-	# backup_candidate = enumerate(sites_with_mets)
-			
 
 
