@@ -6,5 +6,4 @@ coordinates = [(30, -110, 'Tucson', 700, 'Etc/GMT+7'),
                    (35, -105, 'Albuquerque', 1500, 'Etc/GMT+7'),
                    (50, 10, 'Berlin', 34, 'Etc/GMT-1')]
 
-print(naive_times)
-print(coordinates[0])
+  
